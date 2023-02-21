@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Envio</title>
+    <link rel="stylesheet" href="../FormularioEmail/css/style.css">
+</head>
+<body>
+    
+<h1>Formulario de Envio Email</h1>
+
+<form action="main.php" method="post">
+
+    <label for="">Nombre</label>
+    <input type="text" name="nombre" required>
+
+    <label for="">Apellidos</label>
+    <input type="text" name="apellido" required>
+
+
+    <label for="">Email</label>
+    <input type="email" name="correoele" required>
+
+    <label for="">Asunto</label>
+    <select name="asunto">
+        <option value="0" selected>Seleccione una opción</option>
+        <option value="info">Envio de solicitud de información</option>
+        <option value="felicitaciones">Envio de felicitaciones</option>
+        <option value="quejas">Envio de quejas</option>
+    </select>
+    <label for="">Mensaje</label>
+    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+    <input type="submit" name="enviar" value="Enviar mensaje">
+
+</form>
+
+</body>
+</html>
